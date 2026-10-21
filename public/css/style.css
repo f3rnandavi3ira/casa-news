@@ -1,0 +1,195 @@
+/* ── Palette Casa Press ── */
+:root {
+  --cn-navy:        #1b2a4a;
+  --cn-navy-deep:   #121e36;
+  --cn-gold:        #c8972b;
+  --cn-gold-hover:  #a87b20;
+  --cn-bg:          #f5f4f0;
+  --cn-card:        #ffffff;
+  --cn-text:        #1a1a2e;
+  --cn-muted:       #64748b;
+  --cn-border:      #e2e0d8;
+  --cn-placeholder: #d6d3cb;
+}
+
+/* ── Base ── */
+body {
+  background: var(--cn-bg);
+  color: var(--cn-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Navbar ── */
+.navbar.bg-dark,
+.navbar.navbar-dark.bg-dark {
+  background-color: var(--cn-navy) !important;
+  border-bottom: 3px solid var(--cn-gold);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--cn-gold) !important;
+  font-size: 1.3rem;
+}
+
+.navbar-brand:hover {
+  color: #e0b040 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(200, 151, 43, 0.5) !important;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+/* ── Boutons rouges → or ── */
+.btn-danger {
+  background-color: var(--cn-gold) !important;
+  border-color: var(--cn-gold) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: var(--cn-gold-hover) !important;
+  border-color: var(--cn-gold-hover) !important;
+}
+
+/* ── Bouton outline-light (navbar) ── */
+.btn-outline-light {
+  border-color: rgba(200, 151, 43, 0.6) !important;
+  color: var(--cn-gold) !important;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--cn-gold) !important;
+  color: #fff !important;
+}
+
+/* ── Textes rouges → or ── */
+.text-danger {
+  color: var(--cn-gold) !important;
+}
+
+/* ── Barre de recherche ── */
+section.bg-white {
+  background-color: var(--cn-card) !important;
+  border-bottom: 1px solid var(--cn-border) !important;
+}
+
+.form-control:focus {
+  border-color: var(--cn-gold);
+  box-shadow: 0 0 0 0.2rem rgba(200, 151, 43, 0.2);
+}
+
+/* ── Cartes articles ── */
+.card {
+  background-color: var(--cn-card);
+  border: 1px solid var(--cn-border) !important;
+  border-radius: 10px !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px rgba(27, 42, 74, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+.card .border-top {
+  border-color: var(--cn-border) !important;
+}
+
+/* ── Texte secondaire ── */
+.text-secondary {
+  color: var(--cn-muted) !important;
+}
+
+/* ── Images ── */
+.article-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: var(--cn-placeholder);
+  border-radius: 10px 10px 0 0;
+}
+
+.article-thumb {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  background: var(--cn-placeholder);
+  border-radius: 6px;
+}
+
+.article-detail-image {
+  width: 100%;
+  max-height: 430px;
+  object-fit: cover;
+  background: var(--cn-placeholder);
+  border-radius: 10px;
+}
+
+/* ── Badges ── */
+.badge.text-bg-secondary {
+  background-color: var(--cn-navy) !important;
+  color: #fff !important;
+}
+
+/* ── Liens nav ── */
+.nav-link {
+  color: rgba(255,255,255,0.8) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--cn-gold) !important;
+}
+
+/* ── Alertes ── */
+.alert-danger {
+  background-color: #fff5e0;
+  border-color: var(--cn-gold);
+  color: var(--cn-gold-hover);
+}
+
+/* ── Utilitaires ── */
+.pre-line {
+  white-space: pre-line;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .article-thumb {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+/* ── Menu utilisateur mobile ── */
+
+.mobile-user-option {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+
+  .mobile-user-option {
+    display: block;
+  }
+
+  .desktop-user-menu {
+    display: none !important;
+  }
+
+}

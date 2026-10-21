@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CasaNews - Actualites de Casablanca</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-danger" href="/"><i class="bi bi-buildings"></i> CasaNews</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2" id="nav-links"></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-white border-bottom">
+    <div class="container py-3">
+      <div class="input-group">
+        <input class="form-control" type="search" id="search-input" placeholder="Rechercher : football, economie...">
+        <button class="btn btn-danger" id="search-btn">Rechercher</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="container py-4">
+    <div class="row g-4" id="articles-grid"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/js/home.js"></script>
+</body>
+</html>
